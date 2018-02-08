@@ -9,7 +9,7 @@
 
 include "beringei/if/beringei_data.thrift"
 
-namespace cpp2 facebook.gorilla
+namespace cpp facebook.gorilla
 namespace py facebook.gorilla.beringei
 
 service BeringeiService {
