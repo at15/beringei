@@ -8,5 +8,6 @@ for THRIFT_FILE in "$@"; do
     echo $(pwd)
     echo "Building file: " $THRIFT_FILE
     # python2 -mthrift_compiler.main --gen cpp2 "$THRIFT_FILE" -I../..
-    /usr/local/facebook/bin/thrift1 --gen cpp -I ../.. "$THRIFT_FILE"
+    # /usr/local/facebook/bin/thrift1 --gen cpp -I ../.. "$THRIFT_FILE"
+    /usr/local/facebook/bin/thrift1 --templates /usr/local/facebook/include/thrift/templates --gen mstch_cpp2 -I ../.. "$THRIFT_FILE"
 done
