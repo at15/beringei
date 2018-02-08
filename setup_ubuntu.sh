@@ -99,8 +99,8 @@ tar xzvf fbthrift-${FB_VERSION}.tar.gz
 pushd fbthrift-${FB_VERSION}/thrift
 # autoreconf -ivf
 # ./configure --prefix=/usr/local/facebook-${FB_VERSION}
-cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr/local/facebook-${FB_VERSION} .
-make -j $(nproc)
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr/local/facebook-${FB_VERSION} -DMSTCH_INCLUDE_DIRS=/usr/local/facebook-${FB_VERSION}/include/mstch .
+make install -j $(nproc)
 popd
 
 # pushd proxygen-${FB_VERSION}/proxygen
