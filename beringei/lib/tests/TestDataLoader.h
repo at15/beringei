@@ -11,7 +11,7 @@
 
 #include <vector>
 
-#include "beringei/if/gen-cpp2/beringei_data_types.h"
+#include "beringei/if/gen-cpp/beringei_data_types.h"
 
 void loadData(
     std::vector<std::vector<facebook::gorilla::TimeValuePair>>& samples);

@@ -5,6 +5,8 @@ set -e
 
 # Build thrift files.
 for THRIFT_FILE in "$@"; do
+    echo $(pwd)
     echo "Building file: " $THRIFT_FILE
-    python2 -mthrift_compiler.main --gen cpp2 "$THRIFT_FILE" -I../..
+    # python2 -mthrift_compiler.main --gen cpp2 "$THRIFT_FILE" -I../..
+    /usr/local/facebook/bin/thrift1 --gen cpp -I ../.. "$THRIFT_FILE"
 done

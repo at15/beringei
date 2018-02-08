@@ -16,7 +16,7 @@
 #include "beringei/client/BeringeiConfigurationAdapterIf.h"
 #include "beringei/client/BeringeiNetworkClient.h"
 #include "beringei/client/tests/MockConfigurationAdapter.h"
-#include "beringei/if/gen-cpp2/BeringeiService.h"
+#include "beringei/if/gen-cpp/BeringeiService.h"
 #include "beringei/lib/BucketedTimeSeries.h"
 
 using namespace ::testing;

@@ -14,7 +14,7 @@
 #include <mutex>
 
 #include "beringei/client/BeringeiConfigurationAdapterIf.h"
-#include "beringei/if/gen-cpp2/BeringeiService.h"
+#include "beringei/if/gen-cpp/BeringeiService.h"
 #include "beringei/lib/BucketMap.h"
 #include "beringei/lib/MemoryUsageGuardIf.h"
 #include "beringei/lib/ShardData.h"

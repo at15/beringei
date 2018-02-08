@@ -15,7 +15,7 @@
 #include <vector>
 
 #include "beringei/client/BeringeiNetworkClient.h"
-#include "beringei/if/gen-cpp2/beringei_data_types.h"
+#include "beringei/if/gen-cpp/beringei_data_types.h"
 
 namespace facebook {
 namespace gorilla {

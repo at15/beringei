@@ -15,7 +15,7 @@
 
 #include "beringei/client/BeringeiClient.h"
 #include "beringei/client/BeringeiConfigurationAdapterIf.h"
-#include "beringei/if/gen-cpp2/beringei_grafana_types_custom_protocol.h"
+#include "beringei/if/gen-cpp/beringei_grafana_types_custom_protocol.h"
 
 namespace facebook {
 namespace gorilla {

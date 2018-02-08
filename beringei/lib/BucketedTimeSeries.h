@@ -15,7 +15,7 @@
 #include <folly/synchronization/SmallLocks.h>
 #include "BucketStorage.h"
 #include "TimeSeriesStream.h"
-#include "beringei/if/gen-cpp2/beringei_data_types.h"
+#include "beringei/if/gen-cpp/beringei_data_types.h"
 
 namespace facebook {
 namespace gorilla {

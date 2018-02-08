@@ -6,10 +6,10 @@
 # of patent rights can be found in the PATENTS file in the same directory.
 
 # Needed for relative imports amongst headers below.
-include_directories(gen-cpp2)
+include_directories(gen-cpp)
 
 # Uplevel the path to this so lower things can use it.
-set(BERINGEI_THRIFT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2 PARENT)
+set(BERINGEI_THRIFT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp PARENT)
 
 set(
     THRIFT_FILES
@@ -20,37 +20,32 @@ set(
 
 set(
     THRIFT_GEN
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService.tcc
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService_client.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService_custom_protocol.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService_processmap_binary.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/BeringeiService_processmap_compact.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_constants.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_constants.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_constants.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_constants.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_data.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_data.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_types.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_types.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_types.tcc
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_data_types_custom_protocol.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_constants.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_constants.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_data.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_data.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_types.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_types.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_types.tcc
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_grafana_types_custom_protocol.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_types.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_types.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_types.tcc
-    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp2/beringei_types_custom_protocol.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_constants.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_constants.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_constants.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_constants.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_data.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_data.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_reflection.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_reflection.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_types.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_data_types.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_constants.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_constants.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_data.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_data.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_reflection.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_reflection.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_types.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_grafana_types.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_reflection.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_reflection.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/BeringeiService.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/BeringeiService.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_types.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/gen-cpp/beringei_types.h
 )
 
 add_custom_command(
